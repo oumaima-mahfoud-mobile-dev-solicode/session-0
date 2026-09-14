@@ -1,0 +1,74 @@
+## Correction — Décomposer les données
+
+### 1. Relation initiale
+
+```text
+RESERVATION(
+    id_reservation,
+    date_reservation,
+    nom_client,
+    email_client,
+    nom_chambre,
+    prix_chambre,
+    nombre_nuits
+)
+```
+
+### 2. Dépendances fonctionnelles
+
+Pour le client :
+
+```text
+id_client → nom_client, email_client
+```
+
+Pour la chambre :
+
+```text
+id_chambre → nom_chambre, prix_chambre
+```
+
+Pour la réservation :
+
+```text
+id_reservation → date_reservation, id_client, id_chambre, nombre_nuits
+```
+
+### 3. Décomposition
+
+```text
+CLIENT(
+    id_client,
+    nom_client,
+    email_client
+)
+```
+
+```text
+CHAMBRE(
+    id_chambre,
+    nom_chambre,
+    prix_chambre
+)
+```
+
+```text
+RESERVATION(
+    id_reservation,
+    date_reservation,
+    id_client,
+    id_chambre,
+    nombre_nuits
+)
+```
+
+### 4. Entités obtenues
+
+| Entité      | Identifiant    | Propriétés                     |
+| ----------- | -------------- | ------------------------------ |
+| CLIENT      | id_client      | nom_client, email_client       |
+| CHAMBRE     | id_chambre     | nom_chambre, prix_chambre      |
+| RESERVATION | id_reservation | date_reservation, nombre_nuits |
+
+**Conclusion :**
+La relation initiale a été décomposée en **3 relations : CLIENT, CHAMBRE et RESERVATION**, afin d’éviter la répétition des données et de mieux organiser la base de données.
