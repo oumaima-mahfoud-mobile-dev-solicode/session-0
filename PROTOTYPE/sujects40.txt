@@ -1,0 +1,422 @@
+#PROMPT :
+  Donne-moi **40 idées de projets de bases de données** pour un exercice de modélisation relationnelle.
+
+### Contraintes obligatoires :
+
+* Chaque projet doit contenir **exactement 3 tables**.
+* Les 3 tables doivent représenter :
+
+  1. Une entité qui joue le rôle de **personne/utilisateur principal**
+  2. Une table de **catégories**
+  3. Une table de **contenus/articles**
+* Le nom des 3 table doit êtreS **adapté au rôle de la personne dans le projet**. 
+
+  * Exemple : `students`, `categories`, `articles`
+  * Exemple : `chefs`, `categories`, `recipes`
+  * Exemple : `coaches`, `categories`, `articles`
+ 
+* **Ne mets pas obligatoirement `users`**.
+* Ne considère pas automatiquement la personne comme un `client`.
+* Le nom de la table de contenu doit également être adapté au projet : `articles`, `recipes`, `courses`, `news`, `reviews`, `guides`, etc.
+* La table `categories` doit rester présente et servir à classer les contenus.
+* Chaque projet doit avoir une relation logique entre les 3 tables.
+* Les 40 projets doivent être **très différents les uns des autres**.
+
+* Les projets doivent rester simples et réalisables par un étudiant.
+* Aucun projet ne doit nécessiter une 4ème table.
+
+### Pour chaque projet, donne exactement :
+
+**1. Nom du projet :**
+**Concept :**
+**Table 1 :** nom de la table + rôle
+**Table 2 :** `categories` + rôle
+**Table 3 :** nom de la table de contenu + rôle
+**Relations :** expliquer simplement les relations entre les 3 tables
+**Exemple :** donner un exemple concret de données.
+
+### Exemple du niveau attendu :
+
+**Projet : Plateforme de recettes de cuisine**
+
+* `chefs` → contient les informations des chefs qui publient les recettes.
+* `categories` → Cuisine marocaine, pâtisserie, cuisine rapide, etc.
+* `recipes` → contient les recettes publiées.
+* Relation : un chef peut publier plusieurs recettes et une catégorie peut contenir plusieurs recettes.
+
+**Projet : Plateforme de cours**
+
+* `teachers` → contient les enseignants.
+* `categories` → programmation, design, marketing, etc.
+* `courses` → contient les cours publiés.
+* Relation : un enseignant peut créer plusieurs cours et une catégorie peut contenir plusieurs cours.
+
+Maintenant, génère **40 projets différents**, en respectant strictement ces règles.
+
+
+
+#40 suject de prototype;
+1. Plateforme de recettes de cuisine
+
+Concept : partager des recettes.
+
+Table 1 : chefs → contient les chefs qui publient les recettes.
+Table 2 : categories → marocaine, pâtisserie, rapide, végétarienne…
+Table 3 : recipes → contient les recettes.
+Relations : un chef peut publier plusieurs recettes ; une catégorie peut contenir plusieurs recettes.
+Exemple : Chef Sara → catégorie « Pâtisserie » → recette « Cheesecake ».
+2. Plateforme de cours en ligne
+
+Concept : publier des cours éducatifs.
+
+Table 1 : teachers → contient les enseignants.
+Table 2 : categories → programmation, design, marketing…
+Table 3 : courses → contient les cours.
+Relations : un enseignant crée plusieurs cours ; une catégorie contient plusieurs cours.
+Exemple : Ahmed → « Programmation » → « Introduction à JavaScript ».
+3. Blog de voyage
+
+Concept : partager des expériences de voyage.
+
+Table 1 : travelers → contient les voyageurs/auteurs.
+Table 2 : categories → Maroc, Europe, aventure, plage…
+Table 3 : travel_stories → contient les récits de voyage.
+Relations : un voyageur publie plusieurs récits ; une catégorie regroupe plusieurs récits.
+Exemple : Lina → « Maroc » → « Mon voyage à Chefchaouen ».
+4. Plateforme de tutoriels informatiques
+
+Concept : partager des tutoriels techniques.
+
+Table 1 : developers → contient les développeurs auteurs.
+Table 2 : categories → PHP, JavaScript, SQL, Git…
+Table 3 : tutorials → contient les tutoriels.
+Relations : un développeur publie plusieurs tutoriels ; chaque tutoriel appartient à une catégorie.
+Exemple : Yassine → « PHP » → « Créer une API REST ».
+5. Blog de mode
+
+Concept : publier des articles sur la mode.
+
+Table 1 : stylists → contient les stylistes.
+Table 2 : categories → robes, accessoires, chaussures…
+Table 3 : fashion_articles → contient les articles de mode.
+Relations : un styliste publie plusieurs articles ; une catégorie regroupe plusieurs articles.
+Exemple : Salma → « Accessoires » → « Tendances sacs 2026 ».
+6. Plateforme de critiques de films
+
+Concept : publier des critiques cinématographiques.
+
+Table 1 : critics → contient les critiques.
+Table 2 : categories → action, comédie, horreur, drame…
+Table 3 : reviews → contient les critiques de films.
+Relations : un critique publie plusieurs reviews ; une catégorie contient plusieurs reviews.
+Exemple : Nadia → « Drame » → critique d’un film.
+7. Blog sportif
+
+Concept : partager des contenus sportifs.
+
+Table 1 : journalists → contient les journalistes sportifs.
+Table 2 : categories → football, tennis, basketball…
+Table 3 : sports_news → contient les actualités sportives.
+Relations : un journaliste écrit plusieurs news ; une catégorie contient plusieurs news.
+Exemple : Karim → « Football » → « Résultats du championnat ».
+8. Plateforme de conseils fitness
+
+Concept : publier des conseils d'entraînement.
+
+Table 1 : coaches → contient les coachs.
+Table 2 : categories → cardio, musculation, nutrition…
+Table 3 : workout_guides → contient les guides.
+Relations : un coach crée plusieurs guides ; une catégorie contient plusieurs guides.
+Exemple : Sara → « Cardio » → « Programme débutant 30 minutes ».
+9. Blog de photographie
+
+Concept : partager des conseils photo.
+
+Table 1 : photographers → contient les photographes.
+Table 2 : categories → portrait, paysage, studio…
+Table 3 : photo_guides → contient les guides.
+Relations : un photographe publie plusieurs guides ; une catégorie regroupe plusieurs guides.
+Exemple : Amine → « Portrait » → « Réussir un portrait en intérieur ».
+10. Plateforme de livres
+
+Concept : présenter et recommander des livres.
+
+Table 1 : librarians → contient les bibliothécaires.
+Table 2 : categories → roman, science, histoire…
+Table 3 : book_reviews → contient les présentations/critiques.
+Relations : un bibliothécaire publie plusieurs critiques ; une catégorie contient plusieurs critiques.
+Exemple : Fatima → « Roman » → « Critique de L'Étranger ».
+11. Blog scientifique
+
+Concept : vulgariser des sujets scientifiques.
+
+Table 1 : researchers → contient les chercheurs.
+Table 2 : categories → biologie, physique, espace…
+Table 3 : research_articles → contient les articles scientifiques.
+Relations : un chercheur publie plusieurs articles ; une catégorie contient plusieurs articles.
+Exemple : Dr Amine → « Espace » → « Les nouvelles découvertes sur Mars ».
+12. Plateforme de recettes végétariennes
+
+Concept : partager des recettes sans viande.
+
+Table 1 : cooks → contient les cuisiniers.
+Table 2 : categories → salades, plats, desserts…
+Table 3 : vegetarian_recipes → contient les recettes.
+Relations : un cuisinier publie plusieurs recettes ; une catégorie contient plusieurs recettes.
+Exemple : Sara → « Desserts » → « Gâteau aux pommes ».
+13. Blog automobile
+
+Concept : publier des actualités automobiles.
+
+Table 1 : journalists → contient les journalistes automobiles.
+Table 2 : categories → voitures électriques, sportives, nouveautés…
+Table 3 : car_news → contient les actualités.
+Relations : un journaliste écrit plusieurs news ; une catégorie regroupe plusieurs news.
+Exemple : Omar → « Électrique » → « Nouvelle voiture électrique ».
+14. Plateforme de guides touristiques
+
+Concept : présenter des lieux touristiques.
+
+Table 1 : guides → contient les guides touristiques.
+Table 2 : categories → monuments, plages, musées…
+Table 3 : tourist_guides → contient les guides de lieux.
+Relations : un guide crée plusieurs contenus ; une catégorie contient plusieurs guides.
+Exemple : Youssef → « Monuments » → « Visiter la Kasbah des Oudayas ».
+15. Blog de décoration
+
+Concept : partager des idées de décoration.
+
+Table 1 : decorators → contient les décorateurs.
+Table 2 : categories → salon, chambre, cuisine…
+Table 3 : decoration_ideas → contient les idées.
+Relations : un décorateur publie plusieurs idées ; une catégorie contient plusieurs idées.
+Exemple : Imane → « Chambre » → « Décoration minimaliste ».
+16. Plateforme de podcasts
+
+Concept : publier des épisodes de podcasts.
+
+Table 1 : podcasters → contient les créateurs de podcasts.
+Table 2 : categories → technologie, société, humour…
+Table 3 : episodes → contient les épisodes.
+Relations : un podcaster publie plusieurs épisodes ; une catégorie contient plusieurs épisodes.
+Exemple : Adam → « Technologie » → « L'IA en 2026 ».
+17. Blog de jardinage
+
+Concept : partager des conseils pour les plantes.
+
+Table 1 : gardeners → contient les jardiniers.
+Table 2 : categories → fleurs, légumes, plantes intérieures…
+Table 3 : gardening_tips → contient les conseils.
+Relations : un jardinier publie plusieurs conseils ; une catégorie regroupe plusieurs conseils.
+Exemple : Nadia → « Fleurs » → « Comment entretenir une rose ».
+18. Plateforme de pâtisserie
+
+Concept : partager des recettes de pâtisserie.
+
+Table 1 : pastry_chefs → contient les pâtissiers.
+Table 2 : categories → gâteaux, biscuits, tartes…
+Table 3 : pastry_recipes → contient les recettes.
+Relations : un pâtissier crée plusieurs recettes ; une catégorie contient plusieurs recettes.
+Exemple : Sara → « Tartes » → « Tarte aux fraises ».
+19. Blog musical
+
+Concept : publier des actualités musicales.
+
+Table 1 : music_journalists → contient les journalistes.
+Table 2 : categories → pop, rap, rock, jazz…
+Table 3 : music_news → contient les actualités.
+Relations : un journaliste publie plusieurs actualités ; une catégorie contient plusieurs actualités.
+Exemple : Adam → « Rap » → « Les nouveaux albums de 2026 ».
+20. Plateforme de conseils étudiants
+
+Concept : partager des conseils pour étudiants.
+
+Table 1 : students → contient les étudiants auteurs.
+Table 2 : categories → études, examens, orientation…
+Table 3 : student_guides → contient les guides.
+Relations : un étudiant publie plusieurs guides ; une catégorie contient plusieurs guides.
+Exemple : Oumaima → « Examens » → « Comment organiser ses révisions ».
+21. Blog de psychologie
+
+Concept : publier des articles de vulgarisation psychologique.
+
+Table 1 : psychologists → contient les psychologues auteurs.
+Table 2 : categories → sommeil, stress, motivation…
+Table 3 : psychology_articles → contient les articles.
+Relations : un psychologue publie plusieurs articles ; une catégorie contient plusieurs articles.
+Exemple : Dr Sara → « Sommeil » → « Conseils pour mieux dormir ».
+22. Plateforme de jardinage urbain
+
+Concept : partager des méthodes de culture en ville.
+
+Table 1 : garden_experts → contient les experts.
+Table 2 : categories → balcon, terrasse, potager…
+Table 3 : urban_guides → contient les guides.
+Relations : un expert crée plusieurs guides ; une catégorie contient plusieurs guides.
+Exemple : Karim → « Balcon » → « Cultiver des tomates en pot ».
+23. Blog de cinéma
+
+Concept : publier des actualités sur le cinéma.
+
+Table 1 : cinema_journalists → contient les journalistes.
+Table 2 : categories → sorties, acteurs, festivals…
+Table 3 : cinema_news → contient les actualités.
+Relations : un journaliste écrit plusieurs news ; une catégorie contient plusieurs news.
+Exemple : Lina → « Festivals » → « Festival de Marrakech ».
+24. Plateforme de design graphique
+
+Concept : partager des tutoriels de design.
+
+Table 1 : designers → contient les designers.
+Table 2 : categories → logo, affiche, UI/UX…
+Table 3 : design_tutorials → contient les tutoriels.
+Relations : un designer publie plusieurs tutoriels ; une catégorie contient plusieurs tutoriels.
+Exemple : Sara → « UI/UX » → « Créer une interface moderne ».
+25. Blog juridique
+
+Concept : vulgariser des informations juridiques.
+
+Table 1 : lawyers → contient les avocats.
+Table 2 : categories → travail, entreprise, immobilier…
+Table 3 : legal_articles → contient les articles.
+Relations : un avocat publie plusieurs articles ; une catégorie regroupe plusieurs articles.
+Exemple : Me Karim → « Travail » → « Droits du salarié ».
+26. Plateforme de bricolage
+
+Concept : partager des tutoriels de bricolage.
+
+Table 1 : craftsmen → contient les artisans.
+Table 2 : categories → bois, peinture, réparation…
+Table 3 : diy_guides → contient les tutoriels.
+Relations : un artisan publie plusieurs guides ; une catégorie contient plusieurs guides.
+Exemple : Ahmed → « Bois » → « Fabriquer une petite étagère ».
+27. Blog de nutrition
+
+Concept : partager des informations sur l'alimentation.
+
+Table 1 : nutritionists → contient les nutritionnistes.
+Table 2 : categories → petit-déjeuner, protéines, alimentation saine…
+Table 3 : nutrition_articles → contient les articles.
+Relations : un nutritionniste publie plusieurs articles ; une catégorie contient plusieurs articles.
+Exemple : Sara → « Protéines » → « Sources de protéines végétales ».
+28. Plateforme de jeux vidéo
+
+Concept : publier des critiques et actualités gaming.
+
+Table 1 : gamers → contient les auteurs.
+Table 2 : categories → RPG, action, sport, stratégie…
+Table 3 : game_reviews → contient les critiques.
+Relations : un gamer publie plusieurs critiques ; une catégorie contient plusieurs critiques.
+Exemple : Yassine → « RPG » → « Critique d'un nouveau RPG ».
+29. Blog de beauté
+
+Concept : partager des conseils beauté.
+
+Table 1 : beauty_experts → contient les experts beauté.
+Table 2 : categories → maquillage, cheveux, soins…
+Table 3 : beauty_tips → contient les conseils.
+Relations : un expert publie plusieurs conseils ; une catégorie contient plusieurs conseils.
+Exemple : Imane → « Cheveux » → « Routine pour cheveux secs ».
+30. Plateforme de photographie de voyage
+
+Concept : publier des contenus autour des photos de voyage.
+
+Table 1 : travel_photographers → contient les photographes.
+Table 2 : categories → villes, nature, monuments…
+Table 3 : photo_stories → contient les histoires photographiques.
+Relations : un photographe publie plusieurs stories ; une catégorie contient plusieurs stories.
+Exemple : Amine → « Nature » → « Photos des montagnes de l'Atlas ».
+31. Blog d'histoire
+
+Concept : publier des articles historiques.
+
+Table 1 : historians → contient les historiens.
+Table 2 : categories → Antiquité, Moyen Âge, histoire moderne…
+Table 3 : history_articles → contient les articles.
+Relations : un historien écrit plusieurs articles ; une catégorie contient plusieurs articles.
+Exemple : Dr Nadia → « Moyen Âge » → « Les villes marocaines au Moyen Âge ».
+32. Plateforme de langues
+
+Concept : proposer des leçons de langues.
+
+Table 1 : language_teachers → contient les enseignants.
+Table 2 : categories → anglais, français, espagnol…
+Table 3 : language_lessons → contient les leçons.
+Relations : un enseignant crée plusieurs leçons ; une catégorie contient plusieurs leçons.
+Exemple : Maria → « Espagnol » → « Les salutations en espagnol ».
+33. Blog de programmation
+
+Concept : publier des articles de programmation.
+
+Table 1 : programmers → contient les programmeurs auteurs.
+Table 2 : categories → JavaScript, PHP, Python, SQL…
+Table 3 : coding_articles → contient les articles.
+Relations : un programmeur publie plusieurs articles ; une catégorie contient plusieurs articles.
+Exemple : Oumaima → « JavaScript » → « Comprendre les boucles ».
+34. Plateforme de musique
+
+Concept : présenter des albums et artistes.
+
+Table 1 : music_curators → contient les personnes qui créent les contenus.
+Table 2 : categories → rap, pop, rock, jazz…
+Table 3 : album_reviews → contient les présentations/critiques d'albums.
+Relations : un curateur publie plusieurs critiques ; une catégorie contient plusieurs critiques.
+Exemple : Adam → « Pop » → « Analyse du nouvel album ».
+35. Blog de développement personnel
+
+Concept : partager des conseils de développement personnel.
+
+Table 1 : mentors → contient les mentors.
+Table 2 : categories → motivation, organisation, carrière…
+Table 3 : personal_guides → contient les guides.
+Relations : un mentor publie plusieurs guides ; une catégorie contient plusieurs guides.
+Exemple : Sara → « Organisation » → « Organiser sa journée ».
+36. Plateforme de cuisine marocaine
+
+Concept : conserver et partager des recettes marocaines.
+
+Table 1 : moroccan_cooks → contient les cuisiniers.
+Table 2 : categories → tajines, couscous, pâtisserie…
+Table 3 : moroccan_recipes → contient les recettes.
+Relations : un cuisinier publie plusieurs recettes ; une catégorie contient plusieurs recettes.
+Exemple : Fatima → « Tajines » → « Tajine de poulet aux olives ».
+37. Blog de technologie
+
+Concept : publier des actualités technologiques.
+
+Table 1 : tech_journalists → contient les journalistes.
+Table 2 : categories → IA, smartphones, cybersécurité…
+Table 3 : tech_news → contient les actualités.
+Relations : un journaliste publie plusieurs news ; une catégorie contient plusieurs news.
+Exemple : Mehdi → « IA » → « Les nouveautés de l'intelligence artificielle ».
+38. Plateforme de formation professionnelle
+
+Concept : proposer des formations professionnelles.
+
+Table 1 : trainers → contient les formateurs.
+Table 2 : categories → informatique, communication, gestion…
+Table 3 : training_courses → contient les formations.
+Relations : un formateur crée plusieurs formations ; une catégorie contient plusieurs formations.
+Exemple : Nadia → « Gestion » → « Formation en gestion de projet ».
+39. Blog environnemental
+
+Concept : sensibiliser aux problèmes environnementaux.
+
+Table 1 : environmentalists → contient les auteurs.
+Table 2 : categories → recyclage, climat, énergie…
+Table 3 : environment_articles → contient les articles.
+Relations : un environnementaliste publie plusieurs articles ; une catégorie contient plusieurs articles.
+Exemple : Youssef → « Recyclage » → « Comment réduire les déchets ».
+40. Plateforme de conseils professionnels
+
+Concept : partager des conseils pour la carrière.
+
+Table 1 : career_coaches → contient les coachs professionnels.
+Table 2 : categories → CV, entretien, carrière, recrutement…
+Table 3 : career_guides → contient les guides.
+Relations : un coach publie plusieurs guides ; une catégorie contient plusieurs guides.
+Exemple : Amine → « CV » → « Comment créer un CV professionnel ».
+
+
+
+
