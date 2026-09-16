@@ -22,6 +22,6 @@ erDiagram
     COMMANDE }|--|{ PRODUIT : contenir 
 
 ```
-CLIENT (0,N) ─── PASSER ─── (1,1) COMMANDE
+CLIENT (1,N) ─── PASSER ─── (1,1) COMMANDE
 
-COMMANDE (1,N) ─── CONTENIR ─── (0,N) PRODUIT
+COMMANDE (1,N) ─── CONTENIR ─── (1,N) PRODUIT

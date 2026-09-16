@@ -1,0 +1,17 @@
+Entité,Nom du champ,Signification,Type,Taille / Format,Obligatoire
+CUSTOMER,id_customer,Identifiant unique de l’Admin,INT,—,Oui
+CUSTOMER,first_name,Prénom de l’Admin,VARCHAR,100,Oui
+CUSTOMER,last_name,Nom de l’Admin,VARCHAR,100,Oui
+CUSTOMER,email,Adresse email de l’Admin,VARCHAR,150,Oui
+CUSTOMER,password,Mot de passe de l’Admin,VARCHAR,255,Oui
+COLLECTION,id_collection,Identifiant unique de la catégorie,INT,—,Oui
+COLLECTION,name,Nom de la catégorie,VARCHAR,100,Oui,—
+COLLECTION,description,Description de la catégorie,TEXT,—,Non
+PRODUCT,id_product,Identifiant unique du produit,INT,—,Oui
+PRODUCT,name,Nom du produit,VARCHAR,150,Oui
+PRODUCT,description,Description du produit,TEXT,—,Non
+PRODUCT,price,Prix du produit,DECIMAL,"10,2",Oui
+PRODUCT,stock,Quantité disponible,INT,—,Oui
+PRODUCT,image,Image du produit,VARCHAR,255,Non,
+PRODUCT,id_customer,Admin qui a ajouté le produit,INT,—,Oui
+PRODUCT,id_collection,Catégorie du produit,INT,—,Oui
