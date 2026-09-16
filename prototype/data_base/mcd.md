@@ -4,7 +4,7 @@
 erDiagram
 
     CUSTOMER {
-        int id_customer PK
+        int id_customer 
         varchar first_name
         varchar last_name
         varchar email
@@ -12,20 +12,20 @@ erDiagram
     }
 
     COLLECTION {
-        int id_collection PK
+        int id_collection 
         varchar name
         text description
     }
 
     PRODUCT {
-        int id_product PK
+        int id_product 
         varchar name
         text description
         decimal price
         int stock
         varchar image
-        int id_customer FK
-        int id_collection FK
+        int id_customer 
+        int id_collection 
     }
 
     CUSTOMER ||--o{ PRODUCT : AJOUTER
