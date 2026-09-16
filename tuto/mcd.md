@@ -2,18 +2,18 @@
 erDiagram
 
     CLIENT {
-        int id_client PK
+        int id_client 
         string nom_client
         string email_client
     }
 
     COMMANDE {
-        int id_commande PK
+        int id_commande 
         date date_commande
     }
 
     PRODUIT {
-        int id_produit PK
+        int id_produit 
         string nom_produit
         decimal prix_produit
     }
