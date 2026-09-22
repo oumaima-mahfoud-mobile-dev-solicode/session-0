@@ -10,13 +10,15 @@ require_once'requet.php';
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gestion de produits</h1>
+    <div class="title">
+        <h1>Gestion de produits</h1>
+    </div>
    <div class="produits" >
     <a href=ajouter.php>Ajouter produit</a>
  <?php foreach($products as $product) : ?>
     <div class="card">
         <h1><?php echo $product['name'] ?></h1>
-        <img src="<?php echo $product['image']?>">
+        <img src="images/<?= htmlspecialchars($product['image']) ?>" alt="">
         <h2><?php echo  $product['price']?></h2>
         <p><?php echo $product['description']?></p>
         <h3><?php echo $product['name_collection']?></h3>

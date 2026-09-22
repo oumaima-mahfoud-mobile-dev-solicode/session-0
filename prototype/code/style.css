@@ -1,67 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
 body {
-    background-color: #f5f5f5;
-}h1 {
-    color: rgb(13, 3, 44);
-    font-size: 40px;
-    text-align: center;
+    background: aliceblue;
 }
-
-h2 {
+.title {
     text-align: center;
-    color: #52667b;
+    color: purple;
+    margin: 20px;
 }
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} p{
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}a {
-    color: #333;
-    text-decoration: none;
-    border-radius: 15px;
-    background-color: rgb(50, 110, 165);
-    padding: 10px;
+.produits {
+    width: 90%;
+    margin: auto;
     display: flex;
-    text-align: center;
-    width: 150px;
-} .articles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-} .card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-}.card img {
-    width: 250px;
-    height: auto;
-    align-items: center;
-}.ajouter {
-    width: 500px;
-    margin: 50px auto;
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
 }
-
-.ajouter input,
-.ajouter textarea,
-.ajouter select {
+.produits > a {
     width: 100%;
-    margin: 8px 0 15px;
-    padding: 8px;
+    padding: 10px;
+    background: purple;
+    color: white;
+    text-align: center;
 }
-.ajouter textarea {
-    height: 120px;
+.card {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid purple;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+}
+.Ajouter {
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+.Ajouter form {
+    display: flex;
+    flex-direction: column;
+}
+.Ajouter input,
+.Ajouter textarea,
+.Ajouter select,
+.Ajouter button {
+    padding: 10px;
+    margin: 5px;
 }
 
-.ajouter button {
-    padding: 10px 20px;
-    background-color: #222;
-    color: white;
-    border: none;
-    border-radius: 5px;
-} .button {
-    display: flex;
-    gap: 10px;
-}

@@ -51,3 +51,6 @@ VALUES
 ('Robe noire', 'Robe elegante pour femme', 250.00, 5, 'robe.jpg', 1, 1),
 ('Sac rose', 'Sac a main moderne', 180.00, 8, 'sac.jpg', 1, 1),
 ('Chaussures blanches', 'Chaussures confortables', 300.00, 6, 'chaussures.jpg', 1, 2);
+UPDATE products
+set image = concat('images/' , image)
+where image Not like 'images/%';
